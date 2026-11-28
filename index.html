@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Пасхальный Сбор 2026</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/modals.css">
+</head>
+<body>
+<div id="ui"> Счёт: <span id="score">0</span></div>
+
+<div class="logo-container">
+    <img src="assets/images/logo.png" alt="Советский">
+</div>
+
+<div class="social-top">
+    <div class="label"> Наши соцсети</div>
+    <div class="icons">
+        <a href="https://t.me" target="_blank" class="social-icon"><img src="assets/images/tg.png" alt="Telegram"></a>
+        <a href="https://vk.com" target="_blank" class="social-icon"><img src="assets/images/vk.png" alt="VK"></a>
+        <a href="https://max.ru" target="_blank" class="social-icon" id="maxLinkTop"><img src="assets/images/max.png" alt="Max"></a>
+    </div>
+</div>
+
+<div id="leaderboard-screen">
+    <div class="chick"></div>
+    <h1 id="leaderboard-title">ИГРА ОКОНЧЕНА!</h1>
+    <div id="top-list">Загрузка ТОПа...</div>
+    <button class="btn" id="reload-btn" onclick="location.reload()"> ИГРАТЬ СНОВА</button>
+</div>
+
+<canvas id="game"></canvas>
+<div id="toast" class="toast">✅ Текст скопирован!</div>
+
+<script src="scripts/config.js"></script>
+<script src="scripts/anticheat.js"></script>
+<script src="scripts/api.js"></script>
+<script src="scripts/ui.js"></script>
+<script src="scripts/game.js"></script>
+</body>
+</html>
